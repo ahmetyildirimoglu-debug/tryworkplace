@@ -22,8 +22,11 @@ M1 tamamlandı.
 Ne öğrendik:
 
 Bash scripting + cron job
+
 Git: init, commit, branch, merge
+
 Python ile sistem otomasyonu
+
 ------------------------------------------------------------------------------------------------------------
 
 
