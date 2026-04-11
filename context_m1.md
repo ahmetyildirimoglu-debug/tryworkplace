@@ -24,7 +24,7 @@ Ne öğrendik:
 Bash scripting + cron job
 Git: init, commit, branch, merge
 Python ile sistem otomasyonu
-
+------------------------------------------------------------------------------------------------------------
 
 
 "M1 başlıyor. Konumuz: Git + Bash Scripting
