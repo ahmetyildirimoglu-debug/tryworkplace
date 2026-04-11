@@ -27,3 +27,11 @@ VBoxManage.exe yolu: C:\Program Files\VBoxManage.exe
 - Disk: 39GB
 - RAM: 957MB
 - VirtualBox shared folder: /vagrant → C:\Users\Admin\sentinel
+  
+## Ağ Temelleri Tamamlananlar
+- [x] ip addr: ağ kartları ve IP adresleri
+- [x] ip route: gateway ve routing tablosu  
+- [x] ss -tlnp: dinlenen portlar (22-SSH, 53-DNS)
+
+## M0 Durumu: TAMAMLANDI ✓
+## Sonraki: M1 - Git + Bash + Python
