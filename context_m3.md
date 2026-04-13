@@ -16,3 +16,10 @@
 - GitHub webhook entegrasyonu
 - Jenkinsfile ile pipeline as code
 Ne öğrendik: Jenkinsfile ile pipeline'ı kod olarak yazdık. Bu GitOps'un temelidir — pipeline kodu Git'te yaşar, versiyon kontrolü altında.
+
+## Ansible Tamamlananlar
+- [x] Ansible kurulumu
+- [x] inventory.ini oluşturuldu
+- [x] system_check.yml playbook
+- [x] deploy.yml playbook
+- [x] Jenkins + Docker + Ansible tam pipeline
