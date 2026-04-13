@@ -3,3 +3,5 @@ minikube-linux-amd64
 .env
 __pycache__/
 *.pyc
+awscliv2.zip
+aws/
