@@ -1,0 +1,13 @@
+---
+- name: SENTINEL Deploy
+  hosts: local
+  tasks:
+    - name: Docker image build et
+      command: docker build -t sentinel:latest -f /home/vagrant/sentinel/docker/Dockerfile /home/vagrant/sentinel
+
+    - name: Eski container'ı durdur
+      command: docker rm -f sentinel-app
+      ignore_errors: yes
+
+    - name: Yeni container başlat
+      command: docker run --name sentinel-app sentinel:latest

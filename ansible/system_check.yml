@@ -1,0 +1,19 @@
+---
+- name: SENTINEL System Check
+  hosts: local
+  tasks:
+    - name: Sistem bilgisi al
+      command: uname -a
+      register: system_info
+
+    - name: Sonucu göster
+      debug:
+        msg: "{{ system_info.stdout }}"
+
+    - name: Docker durumu kontrol et
+      command: docker ps
+      register: docker_status
+
+    - name: Docker sonucu göster
+      debug:
+        msg: "{{ docker_status.stdout }}"
