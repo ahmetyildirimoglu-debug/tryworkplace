@@ -167,3 +167,38 @@ Her biri için +6-8 hafta sınav çalışması yeter
 
 Toplam süre Claude Code ile: 5-6 ay, sabah akşam tam efor.
 Uzaktan iş: DevSecOps Engineer, 3000-6000$/ay aralığı.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+yeni change log
+
+# SENTINEL Changelog
+
+## [Tamamlanan]
+- [x] M0: Linux, Vagrant, VS Code, Git
+- [x] M1: Bash scripting, Python, cron job (kısmi)
+- [x] M3: Jenkins, Pipeline as Code, Ansible entegrasyonu
+- [x] M4: Ansible playbook (kısmi - Terraform eksik)
+- [x] M5: Docker, Kubernetes, Minikube (kısmi - EKS eksik)
+- [x] M8: Prometheus + Grafana monitoring
+- [x] M10: Analyzer Agent (Ollama/tinyllama)
+- [x] M11: Guide + Code + Supervisor Agent
+
+## [Eksik / Sonraya Bırakılan]
+- [ ] AWS hesabı ve tüm AWS servisleri
+- [ ] Terraform
+- [ ] DockerHub entegrasyonu
+- [ ] EKS (AWS Kubernetes)
+- [ ] DevSecOps: SonarCloud, Snyk, OWASP ZAP
+- [ ] LangGraph orkestrasyon
+- [ ] LangSmith monitoring
+- [ ] FastAPI ile agent API
+- [ ] Production deploy
+
+## [Sonraki Adımlar]
+- [ ] M9: LangGraph + LangSmith
+- [ ] M12: FastAPI + deploy
+- [ ] AWS Free Tier ile cloud fazı
+- [ ] Sertifika hazırlığı
+
+
