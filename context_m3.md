@@ -15,3 +15,4 @@
 ## Sonraki
 - GitHub webhook entegrasyonu
 - Jenkinsfile ile pipeline as code
+Ne öğrendik: Jenkinsfile ile pipeline'ı kod olarak yazdık. Bu GitOps'un temelidir — pipeline kodu Git'te yaşar, versiyon kontrolü altında.
