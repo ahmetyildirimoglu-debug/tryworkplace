@@ -886,3 +886,43 @@ CPU: 0.0% kullanim
 RAM: 966MB / 3911MB
 Disk: 48% dolu
 ===========================
+=== SENTINEL System Check ===
+Tarih: Mon Apr 13 14:05:01 UTC 2026
+Hostname: ubuntu-jammy
+IP: 10.0.2.15/24
+CPU: 3.3% kullanim
+RAM: 1669MB / 3911MB
+Disk: 48% dolu
+===========================
+=== SENTINEL System Check ===
+Tarih: Mon Apr 13 14:10:01 UTC 2026
+Hostname: ubuntu-jammy
+IP: 10.0.2.15/24
+CPU: 3.1% kullanim
+RAM: 959MB / 3911MB
+Disk: 48% dolu
+===========================
+=== SENTINEL System Check ===
+Tarih: Mon Apr 13 14:15:01 UTC 2026
+Hostname: ubuntu-jammy
+IP: 10.0.2.15/24
+CPU: 0.0% kullanim
+RAM: 981MB / 3911MB
+Disk: 48% dolu
+===========================
+=== SENTINEL System Check ===
+Tarih: Mon Apr 13 14:20:22 UTC 2026
+Hostname: ubuntu-jammy
+IP: 10.0.2.15/24
+CPU: 0.0% kullanim
+RAM: 238MB / 3911MB
+Disk: 48% dolu
+===========================
+=== SENTINEL System Check ===
+Tarih: Mon Apr 13 14:25:01 UTC 2026
+Hostname: ubuntu-jammy
+IP: 10.0.2.15/24
+CPU: 60.0% kullanim
+RAM: 1564MB / 3911MB
+Disk: 48% dolu
+===========================
