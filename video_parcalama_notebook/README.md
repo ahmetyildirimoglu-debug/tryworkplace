@@ -7,10 +7,14 @@ Windows için video parçalama aracı. Videoyu **yeniden kodlamadan** (kalite/ve
 video_parcalama_notebook\
   VideoParcala.bat        ← çift tıklayın
   VideoParcala.ps1        ← programın kendisi (bat bunu çalıştırır)
+  Transkript.bat          ← parçalanmış videoların transkriptini üretir
+  Transkript.ps1
   FFmpegKur.bat           ← ilk seferde bir kez çalıştırın
   çalışılacak\            ← parçalanacak videoları buraya koyun
     arşiv\                ← sonuçlar buraya gelir
       <video adı>\        ← o videonun parçaları (video adı_parca001.mp4 ...)
+        <video adı>_transkript.txt   ← tüm parçaların metni, sırayla
+        transkript\                  ← her parça için .txt ve .srt (zaman kodlu altyazı)
       <video adı>.mp4     ← işlenen orijinal video buraya taşınır
 ```
 
@@ -21,6 +25,19 @@ video_parcalama_notebook\
    - **[1] Boyuta göre** (varsayılan): her parça en fazla **190 MB** (Enter = 190).
    - **[2] Eşit parçaya göre**: video süre olarak kaç eşit parçaya bölünecek.
    - **Kesimde 2 sn tekrar alınsın mı?** Evet derseniz her parça, bir önceki parçanın son ~2 saniyesiyle başlar; geçişlerde hiçbir an kaçmaz.
+
+## Transkript
+1. Videoları önce `VideoParcala.bat` ile parçalayın.
+2. `Transkript.bat` dosyasına çift tıklayın. `arşiv` içindeki video klasörleri listelenir:
+   - **Enter**: transkripti olmayan klasörlerin hepsi
+   - **0**: hepsi (var olanlar yeniden üretilir)
+   - **Numaralar** (örn. `1 3`): sadece seçilenler
+3. Dili seçin (varsayılan Türkçe).
+
+İlk çalıştırmada transkript aracı ([whisper.cpp](https://github.com/ggml-org/whisper.cpp), ~5 MB) ve konuşma tanıma modeli
+(önerilen: ~550 MB) bir kez indirilir ve `whisper` klasörüne kaydedilir. Transkript **bu bilgisayarda** üretilir,
+ses hiçbir yere gönderilmez. İşlemciyi yoğun kullanır; süre video uzunluğuna ve bilgisayarın hızına bağlıdır.
+2 sn tekrar ile kesilmiş parçalarda, tekrar eden kısımların metni iki parçada da görünür.
 
 ## Nasıl çalışır / garantiler
 - Video tek geçişte, tam **anahtar karelerden** kesilir; zamana atlama (seek) kullanılmaz.
