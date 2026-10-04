@@ -1,0 +1,1 @@
+Parçalanacak videoları bu klasöre koyun, sonra VideoParcala.bat dosyasını çalıştırın.
