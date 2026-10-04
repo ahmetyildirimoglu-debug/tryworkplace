@@ -11,9 +11,10 @@ Masaüstünde çalışan, Windows için basit video parçalama aracı.
 4. Parçalar her videonun yanında `parcalar\<video adı>\` klasörüne `video_parca000.mp4`, `video_parca001.mp4` ... şeklinde kaydedilir ve klasör otomatik açılır.
 
 ## Gereksinim
-[ffmpeg](https://ffmpeg.org). İki seçenek:
-- `ffmpeg.exe` ve `ffprobe.exe` dosyalarını bu klasöre koyun, **veya**
-- Program ffmpeg bulamazsa otomatik kurmayı teklif eder (`winget install Gyan.FFmpeg`).
+[ffmpeg](https://ffmpeg.org). Kurmanın en kolay yolu:
+- **`FFmpegKur.bat`** dosyasına çift tıklayın. ffmpeg'i indirir ve `ffmpeg.exe` ile `ffprobe.exe` dosyalarını bu klasöre koyar (yönetici izni veya kurulum gerekmez).
+- `VideoParcala.bat` ffmpeg'i bulamazsa `FFmpegKur.bat` dosyasını sizin için çalıştırmayı teklif eder.
+- Dilerseniz `ffmpeg.exe` ve `ffprobe.exe` dosyalarını https://www.gyan.dev/ffmpeg/builds/ adresinden elle indirip bu klasöre de koyabilirsiniz.
 
 ## Notlar
 - Video yeniden kodlanmaz (`-c copy`), bu yüzden çok hızlıdır ve kalite kaybı olmaz.

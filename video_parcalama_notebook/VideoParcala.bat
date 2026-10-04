@@ -25,15 +25,22 @@ echo [!] ffmpeg bulunamadi. Bu program video kesmek icin ffmpeg kullanir.
 echo.
 echo  Secenek 1: ffmpeg.exe ve ffprobe.exe dosyalarini bu klasore koyun:
 echo             %~dp0
-echo  Secenek 2: Simdi otomatik kurulum (winget ile).
+echo  Secenek 2: Simdi otomatik indir (FFmpegKur.bat ile).
 echo.
-set "KUR=H"
-set /p "KUR=Otomatik kurulsun mu? (E/H) [H]: "
+set "KUR=E"
+set /p "KUR=Otomatik indirilsin mi? (E/H) [E]: "
 if /i not "%KUR%"=="E" goto :cikis
-winget install --id Gyan.FFmpeg -e --accept-source-agreements --accept-package-agreements
-echo.
-echo Kurulum bitti. Lutfen bu pencereyi kapatip programi yeniden calistirin.
-goto :cikis
+if not exist "%~dp0FFmpegKur.bat" (
+    echo [!] FFmpegKur.bat bu klasorde bulunamadi.
+    goto :cikis
+)
+call "%~dp0FFmpegKur.bat"
+cd /d "%~dp0"
+if not exist "%~dp0ffmpeg.exe" goto :cikis
+if not exist "%~dp0ffprobe.exe" goto :cikis
+set "FFMPEG=%~dp0ffmpeg.exe"
+set "FFPROBE=%~dp0ffprobe.exe"
+cls
 
 :ffmpeg_tamam
 
